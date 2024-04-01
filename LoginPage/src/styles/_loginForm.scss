@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
   padding: var(--padding-20) var(--padding-60);
   gap: var(--gap-30);
   opacity: 1 !important;
@@ -21,8 +20,13 @@
     border-radius: var(--border-radius-0);
   }
 
-  h2 {
+  h1 {
+    align-self: center;
+    font-weight: var(--font-weight-100);
     color: var(--color-red);
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "fangsong";
   }
 
   input {
@@ -34,6 +38,12 @@
   display: flex;
   flex-direction: column;
   gap: var(--gap-20);
+  align-items: stretch;
+  p {
+    color: var(--color-red);
+    font-size: small;
+    align-self: flex-end;
+  }
 }
 
 .userid,
@@ -42,9 +52,24 @@
   flex-direction: column;
 }
 
-.login-form-footer {
+.login-other-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.or-wrapper {
   display: flex;
   flex-direction: row;
-  gap: var(--gap-30);
-  align-items: center;
+}
+
+.or-border {
+  width: 80px;
+  border-bottom: 1px solid black;
+  margin: var(--padding-10);
+}
+
+.create-new-account {
+  color: var(--color-red);
+  text-decoration: underline;
 }
