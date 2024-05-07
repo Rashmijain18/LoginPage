@@ -10,16 +10,26 @@ const LoginForm = () => {
         <div className="password">
           <label>Password</label>
           <input></input>
-          <p>Forgot password?</p>
+          <a>Forgot password?</a>
         </div>
-        <button>Sign in</button>
+        <button className="sign-in">Sign in</button>
       </div>
       <div className="login-other-options">
         <div className="or-wrapper">
           <div className="or-border"></div> <span>or</span>
           <div className="or-border"></div>
         </div>
-        <p>Sign in with Google</p>
+        <div>
+          <p>log in with</p>
+          <div className="social-login">
+            <button>
+              <i className="fas fa-brands fa-facebook-f" />
+            </button>
+            <button>
+              <i className="fas fa-brands fa-google" />
+            </button>
+          </div>
+        </div>
         <p>
           Are you new? <a className="create-new-account">Create an Account</a>
         </p>

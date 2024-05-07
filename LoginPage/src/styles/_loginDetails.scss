@@ -1,24 +1,25 @@
 .login-details {
   width: 100%;
   background-color: var(--background-color-blue);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  color: var(--color-text-white);
-  padding: var(--padding-20) var(--padding-60);
+  background-image: url("../assets/student.png");
+  background-repeat: no-repeat;
+  background-position: center bottom 0px;
   border-top-left-radius: var(--border-radius-20);
   border-bottom-left-radius: var(--border-radius-20);
-  overflow: auto;
-  background-blend-mode: lighten;
   opacity: 0.9;
-
-  & button {
-    background: linear-gradient(
-      to right,
-      var(--color-red),
-      var(--color-yellow)
-    );
-    border-radius: var(--border-radius-0);
-  }
+  display: flex;
+}
+.details-tile-wrapper {
+  max-height: 20vh;
+  margin: var(--padding-20);
+  border-radius: var(--border-radius-20);
+  display: flex;
+  align-self: flex-end;
+  overflow: auto;
+}
+.details-tile {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text-white);
+  padding: var(--padding-20) var(--padding-60);
 }

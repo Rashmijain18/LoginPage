@@ -11,15 +11,6 @@
   border-bottom-right-radius: var(--border-radius-20);
   overflow: auto;
 
-  button {
-    background: linear-gradient(
-      to right,
-      var(--color-red),
-      var(--color-yellow)
-    );
-    border-radius: var(--border-radius-0);
-  }
-
   h1 {
     align-self: center;
     font-weight: var(--font-weight-100);
@@ -33,23 +24,27 @@
     padding: var(--padding-10);
   }
 }
+.sign-in {
+  background: linear-gradient(to right, var(--color-red), var(--color-yellow));
+  border-radius: var(--border-radius-0);
+}
 
 .login-form {
   display: flex;
   flex-direction: column;
   gap: var(--gap-20);
   align-items: stretch;
-  p {
-    color: var(--color-red);
-    font-size: small;
-    align-self: flex-end;
-  }
 }
 
 .userid,
 .password {
   display: flex;
   flex-direction: column;
+  a {
+    color: var(--color-red);
+    font-size: small;
+    align-self: flex-end;
+  }
 }
 
 .login-other-options {
@@ -67,6 +62,26 @@
   width: 80px;
   border-bottom: 1px solid black;
   margin: var(--padding-10);
+}
+
+.social-login {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-30);
+  button {
+    display: flex;
+    height: 40px;
+    background-color: white;
+    border: 2px solid var(--color-yellow);
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  button:hover {
+    transform: scale(1.1);
+  }
 }
 
 .create-new-account {
