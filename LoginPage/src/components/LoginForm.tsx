@@ -31,7 +31,14 @@ const LoginForm = () => {
           </div>
         </div>
         <p>
-          Are you new? <a className="create-new-account">Create an Account</a>
+          Are you new?{" "}
+          <a
+            className="create-new-account"
+            href="www.google.com"
+            target="_blank"
+          >
+            Create an Account
+          </a>
         </p>
       </div>
     </div>
