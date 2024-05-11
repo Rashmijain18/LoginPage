@@ -2,13 +2,13 @@ const LoginDetails = () => {
   return (
     <div className="login-details">
       <div className="details-tile-wrapper">
-        <div className="details-tile">
+        <div className="detail-tile">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
-            soluta! Harum numquam laboriosam porro placeat, quas enim ullam?
+            "Mastery hub transformed my workflow, improved efficiency and
+            enhanced collabration. Highly recommend for project success."
           </p>
-          <p>email</p>
-          <p>text</p>
+          <div>Sarah Evans</div>
+          <div className="role">Senior Designer</div>
         </div>
       </div>
     </div>
