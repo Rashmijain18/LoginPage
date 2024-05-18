@@ -7,8 +7,8 @@ const LoginDetails = () => {
             "Mastery hub transformed my workflow, improved efficiency and
             enhanced collabration. Highly recommend for project success."
           </p>
-          <div>Sarah Evans</div>
-          <div className="role">Senior Designer</div>
+          <p>Sarah Evans</p>
+          <p className="role">Senior Designer</p>
         </div>
       </div>
     </div>

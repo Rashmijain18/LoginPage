@@ -26,6 +26,10 @@
   border-bottom: 1px solid #ffff;
   overflow: auto;
   text-wrap: pretty;
+  p {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
 }
 .role {
   font-size: x-small;
